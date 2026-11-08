@@ -5,8 +5,8 @@ https://junyong290.github.io/PawPost-Downloads/
 
 1. 내 컴퓨터에 맞는 파일 받기
 Windows 10/11 x64 → Windows 다운로드 (6.3.0)
-Mac M1/M2/M3/M4 이후 → M시리즈 다운로드 (6.3.1-beta.2)
-Intel Mac → Intel 다운로드 (6.3.1-beta.2)
+Mac M1/M2/M3/M4 이후 → M시리즈 다운로드 (6.3.2-beta.1)
+Intel Mac → Intel 다운로드 (6.3.2-beta.1)
 Mac은 macOS 15 이상이 필요합니다.  → 이 Mac에 관하여에서 확인하세요.
 브라우저로 Mac 칩을 정확히 구별할 수 없으므로 직접 골라 주세요.
 
@@ -59,7 +59,7 @@ Esc로 드래그를 취소하면 메일을 보내지 않습니다.
   설치 파일 내장 ZIP의 파일 목록·크기·SHA-256 검증. 현 소스 Windows 빌드 오류 0개.
 - Mac ARM64 15.8.2 / Intel 15.7.9: 네이티브 앱 창, 설정 8페이지, Keychain,
   한글 ZIP·원본 보존 테스트, 앱 번들 구조·ad-hoc 서명·DMG 무결성 확인.
-- Mac 각 32개 코어·22개 모의 클라우드/로컬 SMTP·14개 UI·13개 패키징 정책 테스트 통과.
+- Mac 각 32개 코어·22개 모의 클라우드/로컬 SMTP·15개 UI·13개 패키징 정책 테스트 통과.
   모의 SMTP/Google 테스트는 실제 외부 메일·Drive 테스트가 아닙니다.
 - 미검증: 다른 깨끗한 Windows PC의 설치·실행. 친구 Mac 첫 실행·Finder 드래그·실제 계정 전송.
 - 미통과: Mac Gatekeeper / Apple 공증. 이번 무료 베타에서 공증 완료로 표시하지 않습니다.
@@ -75,3 +75,8 @@ Google 공개 데스크톱 앱 식별 설정은 포함되며, 각 사용자의 �
 
 문제 제보: https://github.com/junyong290/PawPost-Downloads/issues
 비밀번호·OAuth 코드/토큰·개인 파일이 들어간 로그는 공개하지 마세요.
+
+6.3.2-beta.1 수정: Mac 상단 감지가 전역 드래그 저장소에 의존하지 않도록 변경했습니다.
+Finder의 실제 드래그 이벤트로 파일을 확인합니다. 실제 친구 Mac 재검증은 아직 필요합니다.
+기존 PawPost를 종료한 뒤 새 DMG의 PawPost를 응용 프로그램에 복사해 교체하세요.
+사용자 메일 설정·Keychain·기록은 삭제하지 않습니다. 보안 경고는 기존 안내를 따르세요.

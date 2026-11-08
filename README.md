@@ -8,9 +8,9 @@
 
 | 컴퓨터 | 버전 | 다운로드 | 실제 확인 범위 |
 |---|---|---|---|
-| Windows 10/11 x64 | 6.3.0 베타 | [설치 EXE](https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.0-Windows-x64-TEST-Setup.exe) | 기존 실제 이메일·Drive 수신 확인 / 같은 설치 파일 유지 |
-| Mac M시리즈 (M2 포함) | 6.3.1-beta.2 | [ARM64 DMG](https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.1-beta.2-osx-arm64-ADHOC.dmg) | native macOS 15.8.2 앱 실행 검사 통과 / 첫 다운로드 실행 미검증 |
-| Mac Intel | 6.3.1-beta.2 | [x64 DMG](https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.1-beta.2-osx-x64-ADHOC.dmg) | native macOS 15.7.9 앱 실행 검사 통과 / 첫 다운로드 실행 미검증 |
+| Windows 10/11 x64 | 6.3.0 베타 | [설치 EXE](https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.2/PawPost-6.3.0-Windows-x64-TEST-Setup.exe) | 기존 실제 이메일·Drive 수신 확인 / 같은 설치 파일 유지 |
+| Mac M시리즈 (M2 포함) | 6.3.2-beta.1 | [ARM64 DMG](https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.2/PawPost-6.3.2-beta.1-osx-arm64-ADHOC.dmg) | native macOS 15.8.2 앱 실행 검사 통과 / 첫 다운로드 실행 미검증 |
+| Mac Intel | 6.3.2-beta.1 | [x64 DMG](https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.2/PawPost-6.3.2-beta.1-osx-x64-ADHOC.dmg) | native macOS 15.7.9 앱 실행 검사 통과 / 첫 다운로드 실행 미검증 |
 
 **Mac은 macOS 15 이상이 필요하며, Apple Developer ID 서명·공증이 없는 베타입니다. Gatekeeper 검사는 거부되었습니다.** 앱 번들 ad-hoc 서명 검증 통과는 Apple 신뢰 서명이나 공증을 뜻하지 않습니다. 배포 정책 검사에 `Notary Ticket Missing`과 미해결 `Internal Xprotect Error`가 남아 있습니다. 모든 Mac에서 설치·실행을 보장하지 않습니다.
 

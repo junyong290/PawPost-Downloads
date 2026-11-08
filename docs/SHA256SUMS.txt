@@ -1,3 +1,3 @@
 951f6f9fb2b7771700a75118025baa60c023ca8f5131f67bb2ec12d3c8e99e31  PawPost-6.3.0-Windows-x64-TEST-Setup.exe
-68eadda1b747e660fa295d0b4e96adf6fd769d7435e1cf6f9d3547635917cd04  PawPost-6.3.1-beta.2-osx-arm64-ADHOC.dmg
-09a2deb370b40b4aad324e2e4ad6c31c0f5957c3dc8f62079695eb28be30de9f  PawPost-6.3.1-beta.2-osx-x64-ADHOC.dmg
+2357e89360a2ba2e136e6ab91482a23db174546238544b6bd17346b3ccdc32c8  PawPost-6.3.2-beta.1-osx-arm64-ADHOC.dmg
+4f2df5f1ed97d630657eea60c2086dfbc5ef49f558e629e420a934d87ae7f0d6  PawPost-6.3.2-beta.1-osx-x64-ADHOC.dmg

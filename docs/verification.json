@@ -1,5 +1,5 @@
 {
-  "bundle": "friends-beta-2026.11.09",
+  "bundle": "friends-beta-2026.11.09.2",
   "updated": "2026-11-09",
   "channel": "friends-beta",
   "website": "https://junyong290.github.io/PawPost-Downloads/",
@@ -10,23 +10,23 @@
       "version": "6.3.0",
       "bytes": 75216896,
       "sha256": "951f6f9fb2b7771700a75118025baa60c023ca8f5131f67bb2ec12d3c8e99e31",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.0-Windows-x64-TEST-Setup.exe"
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.2/PawPost-6.3.0-Windows-x64-TEST-Setup.exe"
     },
     {
       "platform": "arm64",
-      "filename": "PawPost-6.3.1-beta.2-osx-arm64-ADHOC.dmg",
-      "version": "6.3.1-beta.2",
-      "bytes": 52852674,
-      "sha256": "68eadda1b747e660fa295d0b4e96adf6fd769d7435e1cf6f9d3547635917cd04",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.1-beta.2-osx-arm64-ADHOC.dmg"
+      "filename": "PawPost-6.3.2-beta.1-osx-arm64-ADHOC.dmg",
+      "version": "6.3.2-beta.1",
+      "bytes": 52852490,
+      "sha256": "2357e89360a2ba2e136e6ab91482a23db174546238544b6bd17346b3ccdc32c8",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.2/PawPost-6.3.2-beta.1-osx-arm64-ADHOC.dmg"
     },
     {
       "platform": "intel",
-      "filename": "PawPost-6.3.1-beta.2-osx-x64-ADHOC.dmg",
-      "version": "6.3.1-beta.2",
-      "bytes": 54679985,
-      "sha256": "09a2deb370b40b4aad324e2e4ad6c31c0f5957c3dc8f62079695eb28be30de9f",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.1-beta.2-osx-x64-ADHOC.dmg"
+      "filename": "PawPost-6.3.2-beta.1-osx-x64-ADHOC.dmg",
+      "version": "6.3.2-beta.1",
+      "bytes": 55070881,
+      "sha256": "4f2df5f1ed97d630657eea60c2086dfbc5ef49f558e629e420a934d87ae7f0d6",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.2/PawPost-6.3.2-beta.1-osx-x64-ADHOC.dmg"
     }
   ],
   "googleAudience": "not-reconfirmed; last known Testing",
@@ -39,7 +39,7 @@
     "separateCleanWindowsPC": "not tested"
   },
   "mac": {
-    "version": "6.3.1-beta.2",
+    "version": "6.3.2-beta.1",
     "nativeBuildAndSmoke": true,
     "platforms": [
       {
@@ -61,10 +61,13 @@
         "automatedChecks": {
           "core-tests.json": 32,
           "cloud-tests.json": 22,
-          "mac-headless-results.json": 14
+          "mac-headless-results.json": 15
         },
         "packagingPolicyTests": 13,
-        "gatekeeperExitCode": 3
+        "gatekeeperExitCode": 3,
+        "distributionPolicyExitCode": 70,
+        "notaryTicketMissing": true,
+        "internalXprotectError": true
       },
       {
         "architecture": "osx-x64",
@@ -85,10 +88,13 @@
         "automatedChecks": {
           "core-tests.json": 32,
           "cloud-tests.json": 22,
-          "mac-headless-results.json": 14
+          "mac-headless-results.json": 15
         },
         "packagingPolicyTests": 13,
-        "gatekeeperExitCode": 3
+        "gatekeeperExitCode": 3,
+        "distributionPolicyExitCode": 70,
+        "notaryTicketMissing": true,
+        "internalXprotectError": true
       }
     ],
     "wholeBundleAdHocSignatureValid": true,
@@ -97,18 +103,20 @@
     "gatekeeper": "rejected",
     "distributionCheck": "Notary Ticket Missing; Internal Xprotect Error (unresolved)",
     "quarantinedDownloadFirstLaunch": "not verified",
-    "finderDrag": "not verified",
+    "finderDrag": "friend reported no paw on 6.3.1-beta.2; native destination event fix in 6.3.2-beta.1; real Finder retest pending",
     "realGoogleAndSmtpOnMac": "not verified",
-    "minimumMacOS": "15.0"
+    "minimumMacOS": "15.0",
+    "previousVersionUserReport": "M2 app opened and Naver login connected; not proof of actual file delivery"
   },
   "privacyAudit": {
-    "filesInspected": 79,
+    "filesInspected": 58,
     "knownPersonalAccountIdentifiersFound": false,
     "forbiddenPayloadEntries": [],
     "userCredentialVaultsRead": false,
-    "publisherDesktopOAuthPublicClientIdentityIncluded": true
+    "publisherDesktopOAuthPublicClientIdentityIncluded": true,
+    "windowsArtifactUnchanged": true
   },
   "sourceCodePublished": false,
-  "applicationCodeChanged": false,
+  "applicationCodeChanged": "macOS native file detection only",
   "automaticUpdates": false
 }
