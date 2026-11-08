@@ -8,23 +8,23 @@
       "filename": "PawPost-1.1.0-Windows-x64-Setup.exe",
       "version": "1.1.0",
       "bytes": 75219456,
-      "sha256": "1a1a191b6f781c6fd48a867c7ab363aaace508526fc052abab6e1ae89ff93253",
+      "sha256": "0fc39eb8ddb09263658284f596790a8270392b66769e7684bcbfaac7542e6fc2",
       "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-Windows-x64-Setup.exe"
     },
     {
       "platform": "arm64",
       "filename": "PawPost-1.1.0-macOS-arm64.dmg",
       "version": "1.1.0",
-      "bytes": 52845784,
-      "sha256": "6cba6389659c4ef1169c2a410fd83c9eceb1d8a85046bbef0e6fe55985670d7a",
+      "bytes": 52845805,
+      "sha256": "3ac968de21b2ef65771a4c846313639326f24e20ffb34bbcb262d224a8e51453",
       "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-macOS-arm64.dmg"
     },
     {
       "platform": "intel",
       "filename": "PawPost-1.1.0-macOS-x64.dmg",
       "version": "1.1.0",
-      "bytes": 55096017,
-      "sha256": "59105bc85ddf84829c344033a3566e5e4674a1a9413b9aa200b36a53ee24c371",
+      "bytes": 55082033,
+      "sha256": "ffd1b8f98fbda66ea4065bd198db242e8ffab777cd12c8076260a64e733aecdb",
       "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-macOS-x64.dmg"
     }
   ],
