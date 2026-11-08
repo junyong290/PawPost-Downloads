@@ -1,0 +1,42 @@
+name: Website browser and performance checks
+on:
+  push:
+    branches: [codex/product-quality-1.1, main]
+    paths: ['docs/**', 'scripts/**', 'package.json', 'pnpm-lock.yaml', '.github/workflows/web-quality.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - name: Korean fonts and local server
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y fonts-noto-cjk
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory docs > /tmp/pawpost-site.log 2>&1 &
+          for i in {1..20}; do curl --fail -s http://127.0.0.1:4173/ > /dev/null && break; sleep 1; done
+      - name: Desktop, touch, keyboard, no-upload, reduced motion and accessibility
+        run: pnpm test
+      - name: Lighthouse mobile and desktop
+        run: |
+          export CHROME_PATH=$(node -e "console.log(require('playwright').chromium.executablePath())")
+          pnpm exec lighthouse http://127.0.0.1:4173/ --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=artifacts/web/lighthouse-mobile --only-categories=performance,accessibility,best-practices,seo --quiet
+          pnpm exec lighthouse http://127.0.0.1:4173/ --chrome-flags="--headless --no-sandbox" --preset=desktop --output=json --output=html --output-path=artifacts/web/lighthouse-desktop --only-categories=performance,accessibility,best-practices,seo --quiet
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: PawPost-web-quality
+          path: artifacts/web/
+          retention-days: 30

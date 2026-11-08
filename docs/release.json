@@ -1,32 +1,32 @@
 {
-  "tag": "v1.0.0",
+  "tag": "v1.1.0",
   "date": "2026-11-09",
   "channel": "release",
   "assets": [
     {
       "platform": "windows",
-      "filename": "PawPost-1.0.0-Windows-x64-Setup.exe",
-      "version": "1.0.0",
-      "bytes": 75216896,
-      "sha256": "55908fd7db75388ca26cf5274e1912640c49916728e762682f48d212e9a34deb",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-Windows-x64-Setup.exe"
+      "filename": "PawPost-1.1.0-Windows-x64-Setup.exe",
+      "version": "1.1.0",
+      "bytes": 75219456,
+      "sha256": "1a1a191b6f781c6fd48a867c7ab363aaace508526fc052abab6e1ae89ff93253",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-Windows-x64-Setup.exe"
     },
     {
       "platform": "arm64",
-      "filename": "PawPost-1.0.0-macOS-arm64.dmg",
-      "version": "1.0.0",
-      "bytes": 52856696,
-      "sha256": "5225553decb8a6b8da0df60a96233031d7cfd173b7b592c3129dafa9c08b2270",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-arm64.dmg"
+      "filename": "PawPost-1.1.0-macOS-arm64.dmg",
+      "version": "1.1.0",
+      "bytes": 52845784,
+      "sha256": "6cba6389659c4ef1169c2a410fd83c9eceb1d8a85046bbef0e6fe55985670d7a",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-macOS-arm64.dmg"
     },
     {
       "platform": "intel",
-      "filename": "PawPost-1.0.0-macOS-x64.dmg",
-      "version": "1.0.0",
-      "bytes": 55089158,
-      "sha256": "c09dcbf1c2379e18cc70c4d1c79ef5a3f5557d9d295da1c8141a37a5301080ad",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-x64.dmg"
+      "filename": "PawPost-1.1.0-macOS-x64.dmg",
+      "version": "1.1.0",
+      "bytes": 55096017,
+      "sha256": "59105bc85ddf84829c344033a3566e5e4674a1a9413b9aa200b36a53ee24c371",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-macOS-x64.dmg"
     }
   ],
-  "releaseUrl": "https://github.com/junyong290/PawPost-Downloads/releases/tag/v1.0.0"
+  "releaseUrl": "https://github.com/junyong290/PawPost-Downloads/releases/tag/v1.1.0"
 }

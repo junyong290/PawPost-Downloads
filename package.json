@@ -1,0 +1,14 @@
+{
+  "name": "pawpost-download-site",
+  "private": true,
+  "version": "1.1.0",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "test": "node scripts/test-site.cjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "lighthouse": "13.6.0",
+    "playwright": "1.65.0"
+  }
+}

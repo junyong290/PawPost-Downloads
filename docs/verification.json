@@ -1,67 +1,69 @@
 {
-  "version": "1.0.0",
-  "tag": "v1.0.0",
+  "version": "1.1.0",
+  "tag": "v1.1.0",
   "channel": "release",
   "updated": "2026-11-09",
   "assets": [
     {
       "platform": "windows",
-      "filename": "PawPost-1.0.0-Windows-x64-Setup.exe",
-      "version": "1.0.0",
-      "bytes": 75216896,
-      "sha256": "55908fd7db75388ca26cf5274e1912640c49916728e762682f48d212e9a34deb",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-Windows-x64-Setup.exe"
+      "filename": "PawPost-1.1.0-Windows-x64-Setup.exe",
+      "version": "1.1.0",
+      "bytes": 75219456,
+      "sha256": "1a1a191b6f781c6fd48a867c7ab363aaace508526fc052abab6e1ae89ff93253",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-Windows-x64-Setup.exe"
     },
     {
       "platform": "arm64",
-      "filename": "PawPost-1.0.0-macOS-arm64.dmg",
-      "version": "1.0.0",
-      "bytes": 52856696,
-      "sha256": "5225553decb8a6b8da0df60a96233031d7cfd173b7b592c3129dafa9c08b2270",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-arm64.dmg"
+      "filename": "PawPost-1.1.0-macOS-arm64.dmg",
+      "version": "1.1.0",
+      "bytes": 52845784,
+      "sha256": "6cba6389659c4ef1169c2a410fd83c9eceb1d8a85046bbef0e6fe55985670d7a",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-macOS-arm64.dmg"
     },
     {
       "platform": "intel",
-      "filename": "PawPost-1.0.0-macOS-x64.dmg",
-      "version": "1.0.0",
-      "bytes": 55089158,
-      "sha256": "c09dcbf1c2379e18cc70c4d1c79ef5a3f5557d9d295da1c8141a37a5301080ad",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-x64.dmg"
+      "filename": "PawPost-1.1.0-macOS-x64.dmg",
+      "version": "1.1.0",
+      "bytes": 55096017,
+      "sha256": "59105bc85ddf84829c344033a3566e5e4674a1a9413b9aa200b36a53ee24c371",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.1.0/PawPost-1.1.0-macOS-x64.dmg"
     }
   ],
   "website": "https://junyong290.github.io/PawPost-Downloads/",
-  "buildSourceCommit": "304e445",
-  "privateCiRun": "42514707054",
+  "buildSourceCommit": "6018776",
+  "privateCiRun": "42529461302",
   "changes": [
-    "PawPost name and 1.0.0 version on both platforms",
-    "First-use guide only for accounts not yet connected",
-    "Release and installation regression automation"
+    "Revoked OAuth grant recovery without account loss",
+    "Completed cloud snapshot cleanup after restart",
+    "Cross-platform ZIP traversal protection",
+    "Adjustable narrow trigger and reduced-motion setting",
+    "Metadata-only premium web playground integrated from PR #1"
   ],
   "windows": {
     "checks": {
-      "core-tests.json": 33,
-      "cloud-tests.json": 22,
-      "ui-full/ui-verification-v6.1.json": 24,
+      "core-tests.json": 34,
+      "cloud-tests.json": 24,
+      "ui-full/ui-verification-v6.1.json": 25,
       "ui-fresh/first-run-verification.json": 8,
       "ui-sidebar/sidebar-windows.json": 7,
       "installer/installer-unit-tests.json": 5
     },
     "installerUpgrade": {
-      "uninstall": true,
-      "previousVersion": "6.3.0",
-      "passed": true,
-      "upgrade": true,
-      "desktopShortcut": true,
-      "installAgain": true,
-      "externalEmailSent": false,
       "reinstall": true,
-      "existingCredentialStoreChanged": false,
-      "profileFilesUnchanged": 4,
       "realUserProfileUsed": false,
-      "version": "1.0.0"
+      "existingCredentialStoreChanged": false,
+      "previousVersion": "1.0.0",
+      "desktopShortcut": true,
+      "externalEmailSent": false,
+      "version": "1.1.0",
+      "installAgain": true,
+      "profileFilesUnchanged": 4,
+      "uninstall": true,
+      "passed": true,
+      "upgrade": true
     },
     "authenticodeSigned": false,
-    "externalMailboxReceiptOnThisBuild": "not reverified",
+    "externalMailboxReceiptOnThisBuild": "User confirmed 1 MiB attachment plus 52.85 MB private Drive link mailbox receipt and download, 2026-11-09",
     "newConsumerWindowsPC": "not tested; isolated native Windows CI verified"
   },
   "mac": {
@@ -83,9 +85,9 @@
           "quarantinedDownloadLaunchVerified": false
         },
         "checks": {
-          "core-tests.json": 32,
-          "cloud-tests.json": 22,
-          "headless/mac-headless-results.json": 17
+          "core-tests.json": 34,
+          "cloud-tests.json": 24,
+          "headless/mac-headless-results.json": 18
         },
         "packagingTests": 13,
         "gatekeeperExitCode": 3,
@@ -110,9 +112,9 @@
           "quarantinedDownloadLaunchVerified": false
         },
         "checks": {
-          "core-tests.json": 32,
-          "cloud-tests.json": 22,
-          "headless/mac-headless-results.json": 17
+          "core-tests.json": 34,
+          "cloud-tests.json": 24,
+          "headless/mac-headless-results.json": 18
         },
         "packagingTests": 13,
         "gatekeeperExitCode": 3,
@@ -124,17 +126,17 @@
     "bundleIdentifier": "app.pawpost.desktop",
     "developerIdSigned": false,
     "notarized": false,
-    "userReportBeforeRelease": "User confirmed file transfer on friend M2 before 1.0.0, 2026-11-09",
-    "actualFriendM2On1_0_0": "not yet tested",
+    "userReportBeforeRelease": "User confirmed file transfer on friend M2 before 1.1.0, 2026-11-09",
+    "actualFriendM2On1_1_0": "not yet tested",
     "realIntelFinderAndMailbox": "not tested",
-    "quarantinedDownloadFirstLaunch1_0_0": "not tested",
+    "quarantinedDownloadFirstLaunch1_1_0": "not tested",
     "existingUserKeychainApprovalAfterUpdate": "not tested; identifiers unchanged"
   },
   "google": {
     "scope": "https://www.googleapis.com/auth/drive.file",
     "audience": "Production",
     "evidence": "Publisher reported console transition on 2026-11-09",
-    "newUnlistedAccountAfterTransition": "not yet tested",
+    "newUnlistedAccountAfterTransition": "User attested account was not on test-user list; actual Windows browser OAuth, 64 KiB private upload and SHA-256 download verification passed on 2026-11-09; one account only",
     "clientIdentityUnchanged": true
   },
   "security": {
@@ -146,6 +148,36 @@
     "pawSha256": "174cb8fd20ba47ecbc9714daccfc64dd63dab5e0e6baf7f87a2691c096955f61",
     "credentialStorageAndNamespacesUnchanged": true
   },
-  "historicalRealAccountChecks": "User previously confirmed Windows mailbox/Drive download and M2 file transfer; not counted as fresh 1.0.0 external-account checks",
+  "realAccountChecks": {
+    "newPublicAccount": {
+      "atUtc": "2026-11-08T22:16:15.14771+00:00",
+      "passed": true,
+      "realGoogleApi": true,
+      "userAttestsNotOnTestUserList": true,
+      "scope": "https://www.googleapis.com/auth/drive.file",
+      "privateUploadBytes": 65536,
+      "downloadHashMatches": true,
+      "externalEmailsSent": 0,
+      "sharingChanges": 0,
+      "existingProfileChanged": false,
+      "refreshAfterExpiryTested": false,
+      "privateTestFileRetained": true
+    },
+    "ownerMailboxConfirmation": {
+      "atDate": "2026-11-09",
+      "userReported": true,
+      "smallAttachmentMailboxReceived": true,
+      "linkMailReceived": true,
+      "ownerLinkDownloaded": true,
+      "dmgExecuted": false
+    },
+    "privateDmgUploadBytes": 52845784,
+    "privateDmgDownloadSha256Matches": true,
+    "oneMiBAttachmentState": "Sent",
+    "ownerLinkMailState": "Sent",
+    "refreshAfterExpiryTested": false,
+    "moreThan100UsersTested": false
+  },
+  "historicalRealAccountChecks": "Earlier M2 user file-transfer confirmation is not counted as fresh 1.1.0 Mac verification",
   "automaticUpdates": false
 }
