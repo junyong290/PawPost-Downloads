@@ -1,32 +1,32 @@
 {
-  "tag": "friends-beta-2026.11.09.3",
+  "tag": "v1.0.0",
   "date": "2026-11-09",
-  "channel": "friends-beta",
+  "channel": "release",
   "assets": [
     {
       "platform": "windows",
-      "filename": "PawPost-6.3.0-Windows-x64-TEST-Setup.exe",
-      "version": "6.3.0",
+      "filename": "PawPost-1.0.0-Windows-x64-Setup.exe",
+      "version": "1.0.0",
       "bytes": 75216896,
-      "sha256": "951f6f9fb2b7771700a75118025baa60c023ca8f5131f67bb2ec12d3c8e99e31",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.3/PawPost-6.3.0-Windows-x64-TEST-Setup.exe"
+      "sha256": "55908fd7db75388ca26cf5274e1912640c49916728e762682f48d212e9a34deb",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-Windows-x64-Setup.exe"
     },
     {
       "platform": "arm64",
-      "filename": "PawPost-6.3.2-beta.2-osx-arm64-ADHOC.dmg",
-      "version": "6.3.2-beta.2",
-      "bytes": 52853250,
-      "sha256": "69e9f976b420ceb0709b23a92fa390b2b03618b59115108aae7d82897dd17f08",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.3/PawPost-6.3.2-beta.2-osx-arm64-ADHOC.dmg"
+      "filename": "PawPost-1.0.0-macOS-arm64.dmg",
+      "version": "1.0.0",
+      "bytes": 52856696,
+      "sha256": "5225553decb8a6b8da0df60a96233031d7cfd173b7b592c3129dafa9c08b2270",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-arm64.dmg"
     },
     {
       "platform": "intel",
-      "filename": "PawPost-6.3.2-beta.2-osx-x64-ADHOC.dmg",
-      "version": "6.3.2-beta.2",
-      "bytes": 55075652,
-      "sha256": "7d9494491a21e144f3079b429a20b59988795e8a73da1a8d3c6cc710241a9462",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.3/PawPost-6.3.2-beta.2-osx-x64-ADHOC.dmg"
+      "filename": "PawPost-1.0.0-macOS-x64.dmg",
+      "version": "1.0.0",
+      "bytes": 55089158,
+      "sha256": "c09dcbf1c2379e18cc70c4d1c79ef5a3f5557d9d295da1c8141a37a5301080ad",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-x64.dmg"
     }
   ],
-  "releaseUrl": "https://github.com/junyong290/PawPost-Downloads/releases/tag/friends-beta-2026.11.09.3"
+  "releaseUrl": "https://github.com/junyong290/PawPost-Downloads/releases/tag/v1.0.0"
 }

@@ -1,46 +1,70 @@
 {
-  "bundle": "friends-beta-2026.11.09.3",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "channel": "release",
   "updated": "2026-11-09",
-  "channel": "friends-beta",
-  "website": "https://junyong290.github.io/PawPost-Downloads/",
   "assets": [
     {
       "platform": "windows",
-      "filename": "PawPost-6.3.0-Windows-x64-TEST-Setup.exe",
-      "version": "6.3.0",
+      "filename": "PawPost-1.0.0-Windows-x64-Setup.exe",
+      "version": "1.0.0",
       "bytes": 75216896,
-      "sha256": "951f6f9fb2b7771700a75118025baa60c023ca8f5131f67bb2ec12d3c8e99e31",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.3/PawPost-6.3.0-Windows-x64-TEST-Setup.exe"
+      "sha256": "55908fd7db75388ca26cf5274e1912640c49916728e762682f48d212e9a34deb",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-Windows-x64-Setup.exe"
     },
     {
       "platform": "arm64",
-      "filename": "PawPost-6.3.2-beta.2-osx-arm64-ADHOC.dmg",
-      "version": "6.3.2-beta.2",
-      "bytes": 52853250,
-      "sha256": "69e9f976b420ceb0709b23a92fa390b2b03618b59115108aae7d82897dd17f08",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.3/PawPost-6.3.2-beta.2-osx-arm64-ADHOC.dmg"
+      "filename": "PawPost-1.0.0-macOS-arm64.dmg",
+      "version": "1.0.0",
+      "bytes": 52856696,
+      "sha256": "5225553decb8a6b8da0df60a96233031d7cfd173b7b592c3129dafa9c08b2270",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-arm64.dmg"
     },
     {
       "platform": "intel",
-      "filename": "PawPost-6.3.2-beta.2-osx-x64-ADHOC.dmg",
-      "version": "6.3.2-beta.2",
-      "bytes": 55075652,
-      "sha256": "7d9494491a21e144f3079b429a20b59988795e8a73da1a8d3c6cc710241a9462",
-      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09.3/PawPost-6.3.2-beta.2-osx-x64-ADHOC.dmg"
+      "filename": "PawPost-1.0.0-macOS-x64.dmg",
+      "version": "1.0.0",
+      "bytes": 55089158,
+      "sha256": "c09dcbf1c2379e18cc70c4d1c79ef5a3f5557d9d295da1c8141a37a5301080ad",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/v1.0.0/PawPost-1.0.0-macOS-x64.dmg"
     }
   ],
-  "googleAudience": "not-reconfirmed; last known Testing",
+  "website": "https://junyong290.github.io/PawPost-Downloads/",
+  "buildSourceCommit": "304e445",
+  "privateCiRun": "42514707054",
+  "changes": [
+    "PawPost name and 1.0.0 version on both platforms",
+    "First-use guide only for accounts not yet connected",
+    "Release and installation regression automation"
+  ],
   "windows": {
-    "version": "6.3.0",
-    "existingWorkingInstallerPreserved": true,
-    "embeddedPayloadManifestVerified": true,
+    "checks": {
+      "core-tests.json": 33,
+      "cloud-tests.json": 22,
+      "ui-full/ui-verification-v6.1.json": 24,
+      "ui-fresh/first-run-verification.json": 8,
+      "ui-sidebar/sidebar-windows.json": 7,
+      "installer/installer-unit-tests.json": 5
+    },
+    "installerUpgrade": {
+      "uninstall": true,
+      "previousVersion": "6.3.0",
+      "passed": true,
+      "upgrade": true,
+      "desktopShortcut": true,
+      "installAgain": true,
+      "externalEmailSent": false,
+      "reinstall": true,
+      "existingCredentialStoreChanged": false,
+      "profileFilesUnchanged": 4,
+      "realUserProfileUsed": false,
+      "version": "1.0.0"
+    },
     "authenticodeSigned": false,
-    "currentSourceRegressionBuild": "0 warnings, 0 errors",
-    "separateCleanWindowsPC": "not tested"
+    "externalMailboxReceiptOnThisBuild": "not reverified",
+    "newConsumerWindowsPC": "not tested; isolated native Windows CI verified"
   },
   "mac": {
-    "version": "6.3.2-beta.2",
-    "nativeBuildAndSmoke": true,
     "platforms": [
       {
         "architecture": "osx-arm64",
@@ -58,16 +82,16 @@
           "finderDragVerified": false,
           "quarantinedDownloadLaunchVerified": false
         },
-        "automatedChecks": {
+        "checks": {
           "core-tests.json": 32,
           "cloud-tests.json": 22,
-          "mac-headless-results.json": 16
+          "headless/mac-headless-results.json": 17
         },
-        "packagingPolicyTests": 13,
+        "packagingTests": 13,
         "gatekeeperExitCode": 3,
-        "distributionPolicyExitCode": 70,
-        "notaryTicketMissing": true,
-        "internalXprotectError": true
+        "distributionPolicy": "---------------------------------------------------------------\nNotary Ticket Missing\n    File: PawPost.app \n    Severity: Fatal \n    Full Error: A Notarization ticket is not stapled to this application. \n    Type: Distribution Error \n\nInternal Xprotect Error\n    Severity: Fatal \n    Full Error: One or more files in your application triggered an Xprotect \n        error. \n    Type: Distribution Error \n\n---------------------------------------------------------------",
+        "developerIdSigned": false,
+        "notarized": false
       },
       {
         "architecture": "osx-x64",
@@ -85,39 +109,43 @@
           "finderDragVerified": false,
           "quarantinedDownloadLaunchVerified": false
         },
-        "automatedChecks": {
+        "checks": {
           "core-tests.json": 32,
           "cloud-tests.json": 22,
-          "mac-headless-results.json": 16
+          "headless/mac-headless-results.json": 17
         },
-        "packagingPolicyTests": 13,
+        "packagingTests": 13,
         "gatekeeperExitCode": 3,
-        "distributionPolicyExitCode": 70,
-        "notaryTicketMissing": true,
-        "internalXprotectError": true
+        "distributionPolicy": "---------------------------------------------------------------\nNotary Ticket Missing\n    File: PawPost.app \n    Severity: Fatal \n    Full Error: A Notarization ticket is not stapled to this application. \n    Type: Distribution Error \n\nInternal Xprotect Error\n    Severity: Fatal \n    Full Error: One or more files in your application triggered an Xprotect \n        error. \n    Type: Distribution Error \n\n---------------------------------------------------------------",
+        "developerIdSigned": false,
+        "notarized": false
       }
     ],
-    "wholeBundleAdHocSignatureValid": true,
+    "bundleIdentifier": "app.pawpost.desktop",
     "developerIdSigned": false,
     "notarized": false,
-    "gatekeeper": "rejected",
-    "distributionCheck": "Notary Ticket Missing; Internal Xprotect Error (unresolved)",
-    "quarantinedDownloadFirstLaunch": "not verified",
-    "finderDrag": "friend reported no paw on 6.3.1-beta.2; native destination event fix in 6.3.2-beta.1; real Finder retest pending",
-    "realGoogleAndSmtpOnMac": "not verified",
-    "minimumMacOS": "15.0",
-    "previousVersionUserReport": "M2 app opened and Naver login connected; not proof of actual file delivery",
-    "keychainPromptFix": "UI makes no vault calls on startup, timer, page navigation, recipient editing or after a denied status check. Actual credential operations remain protected. Friend Mac retest pending."
+    "userReportBeforeRelease": "User confirmed file transfer on friend M2 before 1.0.0, 2026-11-09",
+    "actualFriendM2On1_0_0": "not yet tested",
+    "realIntelFinderAndMailbox": "not tested",
+    "quarantinedDownloadFirstLaunch1_0_0": "not tested",
+    "existingUserKeychainApprovalAfterUpdate": "not tested; identifiers unchanged"
   },
-  "privacyAudit": {
-    "filesInspected": 58,
-    "knownPersonalAccountIdentifiersFound": false,
-    "forbiddenPayloadEntries": [],
-    "userCredentialVaultsRead": false,
-    "publisherDesktopOAuthPublicClientIdentityIncluded": true,
-    "windowsArtifactUnchanged": true
+  "google": {
+    "scope": "https://www.googleapis.com/auth/drive.file",
+    "audience": "Production",
+    "evidence": "Publisher reported console transition on 2026-11-09",
+    "newUnlistedAccountAfterTransition": "not yet tested",
+    "clientIdentityUnchanged": true
   },
-  "sourceCodePublished": false,
-  "applicationCodeChanged": "macOS display-only account metadata avoids repeated Keychain authorization; native app name set",
+  "security": {
+    "personalCredentialsIncluded": false,
+    "privateSourcePublished": false,
+    "publisherDesktopPublicIdentityIncluded": true,
+    "payloadFilesAudited": 79,
+    "originalFilesPreservedByTests": true,
+    "pawSha256": "174cb8fd20ba47ecbc9714daccfc64dd63dab5e0e6baf7f87a2691c096955f61",
+    "credentialStorageAndNamespacesUnchanged": true
+  },
+  "historicalRealAccountChecks": "User previously confirmed Windows mailbox/Drive download and M2 file transfer; not counted as fresh 1.0.0 external-account checks",
   "automaticUpdates": false
 }
