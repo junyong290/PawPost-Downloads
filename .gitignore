@@ -1,0 +1,10 @@
+*.dmg
+*.exe
+*.zip
+*.p12
+*.pfx
+*.pem
+*.log
+.env*
+node_modules/
+client_secret_*

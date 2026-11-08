@@ -1,0 +1,114 @@
+{
+  "bundle": "friends-beta-2026.11.09",
+  "updated": "2026-11-09",
+  "channel": "friends-beta",
+  "website": "https://junyong290.github.io/PawPost-Downloads/",
+  "assets": [
+    {
+      "platform": "windows",
+      "filename": "PawPost-6.3.0-Windows-x64-TEST-Setup.exe",
+      "version": "6.3.0",
+      "bytes": 75216896,
+      "sha256": "951f6f9fb2b7771700a75118025baa60c023ca8f5131f67bb2ec12d3c8e99e31",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.0-Windows-x64-TEST-Setup.exe"
+    },
+    {
+      "platform": "arm64",
+      "filename": "PawPost-6.3.1-beta.2-osx-arm64-ADHOC.dmg",
+      "version": "6.3.1-beta.2",
+      "bytes": 52852674,
+      "sha256": "68eadda1b747e660fa295d0b4e96adf6fd769d7435e1cf6f9d3547635917cd04",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.1-beta.2-osx-arm64-ADHOC.dmg"
+    },
+    {
+      "platform": "intel",
+      "filename": "PawPost-6.3.1-beta.2-osx-x64-ADHOC.dmg",
+      "version": "6.3.1-beta.2",
+      "bytes": 54679985,
+      "sha256": "09a2deb370b40b4aad324e2e4ad6c31c0f5957c3dc8f62079695eb28be30de9f",
+      "url": "https://github.com/junyong290/PawPost-Downloads/releases/download/friends-beta-2026.11.09/PawPost-6.3.1-beta.2-osx-x64-ADHOC.dmg"
+    }
+  ],
+  "googleAudience": "not-reconfirmed; last known Testing",
+  "windows": {
+    "version": "6.3.0",
+    "existingWorkingInstallerPreserved": true,
+    "embeddedPayloadManifestVerified": true,
+    "authenticodeSigned": false,
+    "currentSourceRegressionBuild": "0 warnings, 0 errors",
+    "separateCleanWindowsPC": "not tested"
+  },
+  "mac": {
+    "version": "6.3.1-beta.2",
+    "nativeBuildAndSmoke": true,
+    "platforms": [
+      {
+        "architecture": "osx-arm64",
+        "host": "macOS 15.8.2",
+        "nativeSmoke": {
+          "passed": true,
+          "os": "macOS 15.8.2",
+          "architecture": "Arm64",
+          "nativeAvaloniaWindow": true,
+          "sidebarPages": 8,
+          "keychainWriteReadDelete": true,
+          "koreanZipAndOriginalPreserved": true,
+          "externalEmails": 0,
+          "driveUploads": 0,
+          "finderDragVerified": false,
+          "quarantinedDownloadLaunchVerified": false
+        },
+        "automatedChecks": {
+          "core-tests.json": 32,
+          "cloud-tests.json": 22,
+          "mac-headless-results.json": 14
+        },
+        "packagingPolicyTests": 13,
+        "gatekeeperExitCode": 3
+      },
+      {
+        "architecture": "osx-x64",
+        "host": "macOS 15.7.9",
+        "nativeSmoke": {
+          "passed": true,
+          "os": "macOS 15.7.9",
+          "architecture": "X64",
+          "nativeAvaloniaWindow": true,
+          "sidebarPages": 8,
+          "keychainWriteReadDelete": true,
+          "koreanZipAndOriginalPreserved": true,
+          "externalEmails": 0,
+          "driveUploads": 0,
+          "finderDragVerified": false,
+          "quarantinedDownloadLaunchVerified": false
+        },
+        "automatedChecks": {
+          "core-tests.json": 32,
+          "cloud-tests.json": 22,
+          "mac-headless-results.json": 14
+        },
+        "packagingPolicyTests": 13,
+        "gatekeeperExitCode": 3
+      }
+    ],
+    "wholeBundleAdHocSignatureValid": true,
+    "developerIdSigned": false,
+    "notarized": false,
+    "gatekeeper": "rejected",
+    "distributionCheck": "Notary Ticket Missing; Internal Xprotect Error (unresolved)",
+    "quarantinedDownloadFirstLaunch": "not verified",
+    "finderDrag": "not verified",
+    "realGoogleAndSmtpOnMac": "not verified",
+    "minimumMacOS": "15.0"
+  },
+  "privacyAudit": {
+    "filesInspected": 79,
+    "knownPersonalAccountIdentifiersFound": false,
+    "forbiddenPayloadEntries": [],
+    "userCredentialVaultsRead": false,
+    "publisherDesktopOAuthPublicClientIdentityIncluded": true
+  },
+  "sourceCodePublished": false,
+  "applicationCodeChanged": false,
+  "automaticUpdates": false
+}
